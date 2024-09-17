@@ -1,0 +1,633 @@
+/* ページ全体のスタイル
+------------------------------------------ */
+body {
+    font-family: "Noto Serif JP";
+    line-height: 1;
+    color: #000;
+    align-items: center;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  li {
+    list-style: none;
+  }
+
+/* カバー
+------------------------------------------ */
+.cover-container {
+  background-image: url(../image/mainVIsual_sp.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 115%;
+  margin-bottom: 158px;
+}
+
+@media (min-width: 768px) {
+  .cover-container {
+    background-image: url(../image/mainVIsual_pc.png);
+    background-position: right center;
+    padding-bottom: 40%;
+    margin: auto;
+    padding-top: 8%;
+  }
+}
+
+.cover-containar_title-description{
+  font-family: Marcellus;
+  font-size: 24px;
+  position: absolute;
+  display: flex;
+  letter-spacing: 4.8px;
+  top: 6%;
+}
+
+@media (min-width: 768px) {
+  .cover-containar_title-description{
+    letter-spacing: 5.5px;
+    font-size: 28px;
+    top: 5%;
+  }
+}
+
+.cover-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 94%;
+  left: 5.6%;
+}
+
+@media (min-width: 768px) {
+  .cover-content {
+    display: flex;
+    top:38%;
+    left: 15%;
+  }
+}
+
+.cover_students-description {
+  font-family: Marcellus;
+  font-size: 41px;
+  font-weight: 400;
+  text-align: left;
+  color: #000;
+  letter-spacing: 12.4px;
+  line-height: 48px;
+}
+
+@media (min-width: 768px) {
+
+  .cover_students-description {
+    font-family: Marcellus;
+    font-size: 50px;
+    color: #000;
+    letter-spacing: 15px;
+    line-height: 64px;
+  }
+}
+
+.cover_inquiry {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  margin-top: 16px;
+  text-align: left;
+  letter-spacing: 6px;
+}
+
+@media (min-width: 768px) {
+.cover_inquiry {
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+  letter-spacing: 7px;
+}
+
+}
+
+/* 2つのボタン
+------------------------------------------ */
+
+.button-containar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 32px);
+  height: 263px;
+  background-color: #F0F4FF;
+  margin: auto;
+  padding-bottom: 5.6%;
+}
+
+.button-containar_product_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 22%;
+  padding: 2.5% 0% 0% 0%;
+}
+
+.button-containar_product_txt {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.button-containar_price_txt {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+
+.button-containar_freetrial {
+  display: flex;
+  width: 300px;
+  height: 58px;
+  border-radius: 29px;
+  align-items: center;
+  justify-content: center;
+  background: #46C4DB;
+  margin: 5.6% auto;
+}
+
+.button-containar_freetrial-text {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.button-containar_request {
+  display: flex;
+  width: 300px;
+  height: 58px;
+  border-radius: 29px;
+  align-items: center;
+  justify-content: center;
+  background: #5DD5AB;
+  margin: 0 auto;
+}
+
+.button-containar_request-text {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+
+  .button-containar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    height: 146px;
+    background-color: #F0F4FF;
+    margin-top: 47px;
+    margin-bottom: 47px;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-left: 12px;
+  }
+
+  .button-containar_product_box {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+  .button-containar_product_txt {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2.2px;
+  }
+
+  .button-containar_price_txt {
+    font-size: 16px;
+    justify-content: left;
+    padding-top: 16px;
+  }
+
+  .button-containar_freetrial {
+    width:30%;
+    margin: 0 auto;
+    margin-top: 27px;
+    margin-left: 21px;
+  }
+
+  .button-containar_request {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 27px;
+    margin-left: 21px;
+  }
+
+  .button-containar_freetrial:hover {
+    opacity: 0.6;
+  }
+
+  .button-containar_request:hover {
+    opacity: 0.6;
+  }
+}
+
+/* 商品説明
+------------------------------------------ */
+.product__container {
+  background-image: url(../image/subVIsual_sp.png);
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  height: 680px;
+  margin-top: 13%;
+}
+
+.product__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.product__box {
+  width: calc(100% - 32px);
+  margin: auto;
+}
+
+.product_students-description {
+  font-family: EB Garamond;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-top: 14%;
+}
+
+.product_inquiry {
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 18px;s
+}
+
+.product_text {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 5.5%;
+  line-height: 31.8px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+.product__container {
+  background-image: url(../image/subVIsual_pc.png);
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  margin: auto;
+  height: 550px;
+}
+
+.product__content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: auto;
+}
+
+.product__box {
+  width: 35%;
+  margin: 0;
+  margin-right: 100px;
+  margin-left: auto;
+  margin-top: 80px;
+}
+
+.product_students-description {
+  font-family: EB Garamond;
+  font-weight: 700;
+  font-size: 38px;
+  color: #fff;
+  text-align: left;
+}
+
+.product_inquiry {
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  margin-top: 19px;
+}
+
+.product_text {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  line-height: 2.29;
+}
+
+}
+
+
+/* お客様の声 */
+.customer-slider-container {
+  background-color: #FFF;
+  padding: 20px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.customer-slider-title {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  letter-spacing: 1.4px;
+}
+
+.customer-slider-subtitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  margin-top: 3.5%;
+  letter-spacing: 1px;
+}
+
+.customer-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.customer-slides {
+  transition: transform 0.5s ease;
+  background-color: #DBF7F9;
+  width: calc(100% - 69px);
+  margin: 0 auto;
+  margin-top: 11%;
+}
+
+.customer-slide {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  padding-top: 31px;
+}
+
+.customer-slide img {
+  width: 30%;
+  margin: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.customer-slider_name {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.customer-slider_comment {
+  line-height: 28px;
+  letter-spacing: -2px;
+  text-align: left;
+  margin: 18px 5px 18px 6px;
+}
+
+.slider-prev,
+.slider-next {
+  position: absolute;
+  width: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #00AFBF;
+  border-radius: 45px 45px 45px 45px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.slider-prev {
+  left: 10px;
+}
+
+.slider-next {
+  right: 10px;
+}
+
+@media (min-width: 768px) {
+  .customer-slider-title {
+      font-size: 45px;
+  }
+
+  .customer-slider-subtitle {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .customer-slide {
+      min-width: 100%; /* モバイルでの表示は1枚 */
+  }
+}
+
+/* Q&A
+------------------------------------------ */
+.qa_containar {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #F4FFE8, #C6F0FE);
+}
+
+.qa_containar_title-content h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: EB Garamond;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1.4px;
+}
+
+.qa_containar_subtitle-content {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  margin-top: 3.5%;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .qa_containar_title-content h2 {
+    font-size: 36px;
+    padding-top: 14px;
+  }
+}
+
+.qa_containar_accordion-content_qa {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(100% - 32px);
+  max-width: 768px;
+  background-color: #fff;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .qa_containar_accordion-content_qa {
+
+  }
+}
+
+.qa_containar_accordion-content_qa_question_content {
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 26px;
+  line-height: 1.87;
+}
+
+.custom-icon-q {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  font-family: EB Garamond;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .custom-icon-q {
+    width: 50px;
+    height: 50px;
+    top: 42px;
+    left: 21px;
+    font-size: 24px;
+  }
+}
+
+.qa__description {
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .qa__description {
+    padding-left: unset;
+  }
+}
+
+.qa_containar_accordion-content_qa_answer_content {
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  padding-right: 5px;
+  padding-top: 26px;
+  line-height: 1.87;
+}
+
+.qa_containar_accordion-content_qa_answer_content.active {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .qa_containar_accordion-content_qa_answer_content {
+    padding-left: unset;
+    padding-right: 66px;
+    padding-top: 31px;
+  }
+}
+
+.qa_containar_accordion-content_qa_answer_content_answer-icon-content {
+  position: relative;
+}
+
+.custom-icon-a {
+  display: flex;
+  font-family: EB Garamond;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-right: 3px;
+}
+
+@media (min-width: 768px) {
+  .custom-icon-a {
+    width: 50px;
+    height: 50px;
+    top: 130px;
+    left: 23px;
+    font-size: 24px;
+  }
+}
+
+/* フッター
+------------------------------------------ */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #0071CE;
+  color: #ffffff;
+}
+
+.footer-logo {
+  font-family: Marcellus;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  font-size: 12px;
+}
+
+.footer-link:hover {
+  background-color: #005bac;
+}
+
+.footer-credits {
+  font-size: 11px;
+  margin-top: 15px;
+}
