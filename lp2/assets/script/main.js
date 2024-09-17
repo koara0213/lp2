@@ -1,32 +1,4 @@
-// ハンバーガーメニュー
-var hamburger = $('.hamburger-menu');
-
-$('.hamburger-button').on('click', function () {
-  hamburger.toggleClass('hamburger-menu-active');
-});
-
-$('.hamburger-menu-list').on('click', function () {
-  hamburger.removeClass('hamburger-menu-active');
-});
-
-$(window).on('resize', function () {
-  hamburger.removeClass('hamburger-menu-active');
-});
-
-$(document).ready(function(){
-  $('a[href^="#"]').on('click', function(event) {
-      var target = $(this.getAttribute('href'));
-      if( target.length ) {
-          event.preventDefault();
-          $('html, body').stop().animate({
-              scrollTop: target.offset().top
-          }, 1000);
-      }
-  });
-});
-
-
-// お客様の声
+// Voice
 document.addEventListener('DOMContentLoaded', function () {
   $('.customer-slides').slick({
       infinite: true,
