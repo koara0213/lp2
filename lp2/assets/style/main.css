@@ -457,7 +457,7 @@ body {
 
 @media (max-width: 767px) {
   .customer-slide {
-      min-width: 100%; /* モバイルでの表示は1枚 */
+      min-width: 100%;
   }
 }
 
