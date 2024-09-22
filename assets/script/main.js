@@ -108,3 +108,4 @@ $('.qa__item').on('click', function() {
       });
     }
   });
+  
